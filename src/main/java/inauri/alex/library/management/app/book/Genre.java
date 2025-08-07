@@ -1,4 +1,4 @@
-package inauri.alex.library.management.model.book;
+package inauri.alex.library.management.app.book;
 
 public enum Genre {
   FICTION,

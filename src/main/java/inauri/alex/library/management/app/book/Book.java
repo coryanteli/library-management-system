@@ -1,6 +1,6 @@
-package inauri.alex.library.management.model.book;
+package inauri.alex.library.management.app.book;
 
-import inauri.alex.library.management.model.book.copy.BookCopy;
+import inauri.alex.library.management.app.book.copy.BookCopy;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,6 +21,8 @@ public class Book {
 
   @NonNull private String author;
 
+  private String isbn;
+
   @Enumerated(EnumType.STRING)
   private Genre genre;
 
@@ -28,6 +30,6 @@ public class Book {
 
   private String description;
 
-  @OneToMany(mappedBy = "book")
+  @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<BookCopy> copies;
 }

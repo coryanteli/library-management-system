@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/library_management_test
+    url: jdbc:postgresql://localhost:5432/library_management_dev
     username: manager
     password: ${POSTGRES_DATASOURCE_PASSWORD}

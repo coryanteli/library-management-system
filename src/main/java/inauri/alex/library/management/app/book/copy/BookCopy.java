@@ -1,6 +1,6 @@
-package inauri.alex.library.management.model.book.copy;
+package inauri.alex.library.management.app.book.copy;
 
-import inauri.alex.library.management.model.book.Book;
+import inauri.alex.library.management.app.book.Book;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
