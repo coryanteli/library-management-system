@@ -5,13 +5,13 @@ import org.springframework.data.domain.Pageable;
 
 public interface BookService {
 
-    Book findById(int id);
+  Book findById(int id);
 
-    Page<Book> findAll(BookFindRequest request, Pageable pageable);
+  Page<Book> findAll(BookFindRequest request, Pageable pageable);
 
-    Book create(Book book);
+  Book create(Book book);
 
-    Book update(int id, Book book);
+  Book update(int id, Book book);
 
-    void delete(int id);
+  void delete(int id);
 }

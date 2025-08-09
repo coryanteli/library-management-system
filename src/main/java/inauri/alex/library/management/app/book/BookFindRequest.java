@@ -1,6 +1,10 @@
 package inauri.alex.library.management.app.book;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -14,5 +18,7 @@ public class BookFindRequest {
   private String author;
   private String isbn;
   private List<Genre> genre;
-  private Integer year;
+  private Integer yearMoreThan;
+  private Integer yearLessThan;
+  private Boolean isAvailable;
 }
